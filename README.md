@@ -1,13 +1,9 @@
-# Lab 06 — Number Converter Application
+## DockerHub Deployment
 
-This is a simple web application that converts numbers between different formats.
+Docker image available at: [https://hub.docker.com/r/ayeshanoorr44/number-converter](https://hub.docker.com/r/ayeshanoorr44/number-converter)
 
-## Features
-- Converts decimal, binary, and hexadecimal numbers
-- Built using Python and Flask
-- Dockerized for easy deployment
+### Pull and Run
 
-## How to Run
-1. Build the Docker image:
-   ```bash
-   docker build -t lab6-app .
+```bash
+docker pull ayeshanoorr44/number-converter:1.0
+docker run -d -p 3000:3000 --name number-converter ayeshanoorr44/number-converter:1.0
